@@ -24,6 +24,7 @@ import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import com.arcgismaps.ApiKey
 import com.arcgismaps.ArcGISEnvironment
+import com.arcgismaps.BuildConfig
 import com.esri.arcgismaps.sample.sampleslib.theme.SampleAppTheme
 import com.esri.arcgismaps.sample.adddynamicentitylayer.screens.MainScreen
 
@@ -33,7 +34,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         // authentication with an API key or named user is
         // required to access basemaps and other location services
-        ArcGISEnvironment.apiKey = ApiKey.create(BuildConfig.API_KEY)
+        ArcGISEnvironment.apiKey = ApiKey.create("AAPK1e43bdcf9fa04fa0a729106fdd7a97fbNbpa3VVhaR5eKzfmkAFb0Uy_soNrGAjpslTJLcWQiNV6T3YGoRy8Sfa7a5ZXkBcj")
         setContent {
             SampleAppTheme {
                 AddDynamicEntityLayerApp()
