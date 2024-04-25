@@ -34,7 +34,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         // authentication with an API key or named user is
         // required to access basemaps and other location services
-        ArcGISEnvironment.apiKey = ApiKey.create(BuildConfig.API_KEY)
+        ArcGISEnvironment.apiKey = ApiKey.create("AAPK1e43bdcf9fa04fa0a729106fdd7a97fbNbpa3VVhaR5eKzfmkAFb0Uy_soNrGAjpslTJLcWQiNV6T3YGoRy8Sfa7a5ZXkBcj")
         // remove focus from text fields when keyboard closes
         WindowCompat.setDecorFitsSystemWindows(window, false)
         // set compose content
